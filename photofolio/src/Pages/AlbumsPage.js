@@ -2,7 +2,6 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import Albumform from '../Components/AlbumForm/Albumform'
 import Albumcontainer from '../Components/AlbumContainer/Albumcontainer'
-import "../Pages/Albumpage.css"
 import { db } from '../firestoreInitialize'
 import { collection, onSnapshot } from 'firebase/firestore'
 function AlbumsPage({inAlbum,setInAlbum}) {
@@ -19,7 +18,6 @@ function AlbumsPage({inAlbum,setInAlbum}) {
             })
             setAlbums(Albums);
         })
-        console.log(unsub);
         
     },[])
     function handleFormVisible(){

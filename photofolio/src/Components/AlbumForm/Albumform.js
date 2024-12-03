@@ -1,5 +1,4 @@
 import React from 'react'
-import "../AlbumForm/Albumform.css"
 import { useRef } from 'react';
 import { collection,addDoc } from 'firebase/firestore';
 import { db } from '../../firestoreInitialize';
