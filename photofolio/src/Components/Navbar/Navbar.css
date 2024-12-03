@@ -1,0 +1,11 @@
+.navbar{
+    height: 6vh;
+    background-color: #A0A0F9;
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+    color: black;
+    margin-left: 1.5rem ;
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+#albumButtons{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;    
+    margin-top: 10vh;
+}
+
+.Albumscollection{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.card {
+    flex: 0 0 15%; /* Each card will take up 20% of the row */
+    max-width: 20%; /* Prevents the card from exceeding 20% of the container's width */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px; /* Optional: adds some space between cards */
+  }
+  .card:hover {
+    background-color: #1b6bff; /* Change this to your desired hover background color */
+    transform: scale(1.05);
+    cursor: pointer;
+}
