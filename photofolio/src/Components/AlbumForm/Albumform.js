@@ -2,18 +2,17 @@ import React from 'react'
 import { useRef } from 'react';
 import { collection,addDoc } from 'firebase/firestore';
 import { db } from '../../firestoreInitialize';
-function Albumform({Albums,setAlbums}) {
+function Albumform() {
   const albumNameRef = useRef();
 
   const handleCreateClick = async(e) => {
     e.preventDefault();
     const albumName = albumNameRef.current.value;
-    const docRef  = await addDoc(collection(db,"albums"),{
+    await addDoc(collection(db,"albums"),{
       albumName: albumName,
       images:[],
       createdon:new Date()
     })
-    console.log("Document written with ID: ", docRef.id);
     albumNameRef.current.value = '';
   };
 

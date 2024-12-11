@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      {(Object.keys(inAlbum).length === 0)?<AlbumsPage inAlbum={inAlbum} setInAlbum={setInAlbum} />:<AlbumImages inAlbum={inAlbum} />}
+      {(Object.keys(inAlbum).length === 0)?<AlbumsPage inAlbum={inAlbum} setInAlbum={setInAlbum} />:<AlbumImages inAlbum={inAlbum} setInAlbum={setInAlbum} />}
     </>
   );
 }
